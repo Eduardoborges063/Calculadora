@@ -1,10 +1,17 @@
-﻿namespace Calculadora.ConsoleApp1
+﻿using Calculadora.ConsoleApp1.Tela;
+using System.Runtime.InteropServices;
+
+namespace Calculadora.ConsoleApp1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TelaCalculadora tela = new TelaCalculadora();
+            while (true)
+            {
+                tela.MostrarMenu();
+            }
         }
     }
 }
